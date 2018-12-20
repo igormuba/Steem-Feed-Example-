@@ -1,0 +1,26 @@
+body {
+    background-color: antiquewhite;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] minmax(0, 8in) [end] 0.5in 1fr;
+    padding: 0.5in 0;
+    margin-bottom: 1in;
+    
+}
+
+article * { 
+    grid-column: start/end;
+    max-width: 100%;
+    background-color: aliceblue;
+}
+
+.horizontal-ruler {
+    height: 5px;
+    background-color: blue;
+}
+
+.post-author {
+    color: gray;
+}
