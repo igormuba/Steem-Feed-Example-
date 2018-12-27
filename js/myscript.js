@@ -19,7 +19,7 @@ function getTheFeed(){
             document.getElementById(iToString).innerHTML = `
             <hr class="horizontal-ruler">
             <h1>`+result[i].title+`</h1>
-            <h2 class="post-author"><em>by: @`+result[i].author+`</em></h2>
+            <h2 class="post-author"><em><a href="javascript:;" onclick="loadProfile('`+result[i].author+`')">by: @`+result[i].author+`</a></em></h2>
             <hr class="horizontal-ruler">
             <p>`+html+`</p>
             <hr class="horizontal-ruler">
